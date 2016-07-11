@@ -10,7 +10,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
-        app: PATHS.app
+        app: ['babel-polyfill', PATHS.app]
     },
     resolve: {
         extensions: ['', '.js', '.jsx']
